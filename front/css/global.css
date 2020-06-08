@@ -11,10 +11,12 @@
 
 body {
   background-color: var(--base-color);
-  
   font-family: 'Lato', Helvetica, sans-serif;
   color: var(--base-color-s4);
   text-align: center;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
