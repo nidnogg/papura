@@ -1,0 +1,20 @@
+:root {
+  /* palette */
+  --base-color: #FCF9DC;
+  --base-color-s1: #E3E0C5;
+  --base-color-s2: #BDBAA4;
+  --base-color-s3: #7D7B6D;
+  --base-color-s4: #3D3C35;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+body {
+  background-color: var(--base-color);
+  
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: var(--base-color-s4);
+  text-align: center;
+  box-sizing: border-box;
+}
+
