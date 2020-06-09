@@ -8,17 +8,27 @@ const Home = () => {
       <Head>
         <title>Papura Cadernos</title>
       </Head>
-      <div>
-        <h3>
-          all I ever wanted
-        </h3>
-      </div>
+      <section className="main grid">
+
+        <div className="product-square col">
+      
+        </div>
+
+        <div className="product-square col">
+      
+        </div>
+
+        <div className="product-square col">
+          
+        </div>
+
+      </section>
     </Layout>
   );
 }
 
 /*
-interesting approach for rendering products
+interesting approach for rendering products -
 const pids = ['id1', 'id2', 'id3']
 {
   pids.map((pid) => (

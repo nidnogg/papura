@@ -1,0 +1,70 @@
+//// -- LEVEL 1
+//// -- Tables and References
+
+// Creating tables
+
+table product as prod {
+  id int [pk]    
+  name varchar
+  typ-id int
+  stock int
+  img_path_id int    
+  created_at datetime
+  updated_at datetime
+  // sum of all subtypes
+}
+
+table prod_type as type {
+  id int [pk]
+  prod_id int
+  type_name varchar
+  img_path_id int
+  created_at datetime
+  updated_at datetime
+}
+
+table img_path {
+  id int [pk]
+  path varchar
+  created_at datetime
+  updated_at datetime
+}
+
+table user as u {
+  id int [pk, increment] // auto-increment
+  name varchar
+  lastname varchar
+  email varchar
+  created_at datetime
+  updated_at datetime
+}
+
+table cart {
+  id int [pk]
+  user_id int
+  prod_id int 
+  created_at datetime
+  updated_at datetime
+}
+
+table order {
+  id int [pk]
+  user_id int
+  prod_id int
+  cart_id int
+  created_at datetime
+  updated_at datetime
+}
+
+Ref: prod.type < type.prod_id
+Ref: u.id - cart.user_id // 1 cart per user
+Ref: u.id < order.user_id 
+Ref: prod.img_path_id - img_path.id
+Ref: type.img_path_id - img_path.id
+Ref: prod.id < order.prod_id
+Ref: prod.id > cart.prod_id // many products in one cart
+
+// Creating references
+// You can also define relaionships separately
+// > many-to-one; < one-to-many; - one-to-one
+
