@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user_id": {
+      "type": "integer",
+      "unique": true
+    },
+    "prod_id": {
+      "type": "integer",
+      "unique": true
+    },
+    "cart_id": {
+      "type": "integer",
+      "unique": true
+    }
+  }
+}

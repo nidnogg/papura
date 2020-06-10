@@ -1,5 +1,5 @@
 {
-  "name": "papura-back",
+  "name": "back",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,23 +11,23 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "knex": "<0.20.0",
-    "pg": "^8.2.1",
     "strapi": "3.0.1",
     "strapi-admin": "3.0.1",
-    "strapi-connector-bookshelf": "3.0.1",
-    "strapi-plugin-content-manager": "3.0.1",
+    "strapi-utils": "3.0.1",
     "strapi-plugin-content-type-builder": "3.0.1",
+    "strapi-plugin-content-manager": "3.0.1",
+    "strapi-plugin-users-permissions": "3.0.1",
     "strapi-plugin-email": "3.0.1",
     "strapi-plugin-upload": "3.0.1",
-    "strapi-plugin-users-permissions": "3.0.1",
-    "strapi-utils": "3.0.1"
+    "strapi-connector-bookshelf": "3.0.1",
+    "knex": "<0.20.0",
+    "pg": "latest"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "b94c2053-412c-43cc-83e9-3baf4a1f773f"
+    "uuid": "20155b61-2268-47c5-a788-efafe34371a4"
   },
   "engines": {
     "node": ">=10.0.0",
