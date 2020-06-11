@@ -22,6 +22,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "prod_id": {
+      "via": "prod_types",
+      "model": "product"
     }
   }
 }

@@ -12,10 +12,7 @@
     "name": {
       "type": "string"
     },
-    "type": {
-      "type": "integer"
-    },
-    "price": {
+    "value": {
       "type": "decimal"
     },
     "stock": {
@@ -31,6 +28,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "order": {
+      "model": "order",
+      "via": "products"
+    },
+    "prod_types": {
+      "collection": "prod-type",
+      "via": "prod_id"
     }
   }
 }

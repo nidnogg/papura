@@ -27,6 +27,7 @@ CREATE TABLE "img_path" (
 CREATE TABLE "user" (
   "id" SERIAL PRIMARY KEY,
   "name" varchar(255),
+  "orders" int,
   "lastname" varchar(255),
   "email" varchar(255),
   "created_at" timestamptz,
@@ -57,9 +58,14 @@ CREATE TABLE "order" (
   "updated_at" timestamptz
 );
 
+
 ALTER TABLE "product" ADD FOREIGN KEY ("type") REFERENCES "prod_type" ("id");
 
+ALTER TABLE "product" ADD FOREIGN KEY ("id") REFERENCES "cart_prod" ("prod_id");
+
 ALTER TABLE "cart" ADD FOREIGN KEY ("user_id") REFERENCES "user" ("id");
+
+ALTER TABLE "cart" ADD FOREIGN KEY ("cart_items") REFERENCES "cart_prod" ("card_id");
 
 ALTER TABLE "order" ADD FOREIGN KEY ("user_id") REFERENCES "user" ("id");
 
@@ -69,6 +75,5 @@ ALTER TABLE "img_path" ADD FOREIGN KEY ("id") REFERENCES "prod_type" ("img_path_
 
 ALTER TABLE "order" ADD FOREIGN KEY ("prod_id") REFERENCES "product" ("id");
 
-ALTER TABLE "cart_prod" ADD FOREIGN KEY ("id") REFERENCES "cart" ("cart_items");
 
-ALTER TABLE "product" ADD FOREIGN KEY ("id") REFERENCES "cart_prod" ("prod_id");
+

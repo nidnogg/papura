@@ -9,11 +9,18 @@
     "timestamps": true
   },
   "attributes": {
-    "user_id": {
-      "type": "integer"
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "cart"
     },
-    "cart_items_id": {
-      "type": "integer"
+    "cart_prod": {
+      "via": "cart_id",
+      "model": "cart-prod"
+    },
+    "order_id": {
+      "via": "cart_id",
+      "model": "order"
     }
   }
 }

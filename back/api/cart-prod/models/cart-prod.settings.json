@@ -9,8 +9,12 @@
     "timestamps": true
   },
   "attributes": {
+    "cart_id": {
+      "model": "cart",
+      "via": "cart_prod"
+    },
     "prod_id": {
-      "type": "integer"
+      "collection": "product"
     }
   }
 }
