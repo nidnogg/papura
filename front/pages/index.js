@@ -9,13 +9,13 @@ const Home = () => {
         <title>Papura Cadernos</title>
       </Head>
       <section className="main grid">
+        <div className="product-square product-col-0">
+        </div>
+
         <div className="product-square product-col-1">
         </div>
 
         <div className="product-square product-col-2">
-        </div>
-
-        <div className="product-square product-col-3">
         </div>
       </section>
     </Layout>

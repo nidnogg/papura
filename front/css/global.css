@@ -113,19 +113,20 @@ nav a {
   width: 400px;
 }
 
-.product-col-1 {
+.product-col-0 {
   padding: 0px 0px 0px 0px;
   margin: 10px 0px 0px 0px;
   /*top right bottom left*/
 }
 
-.product-col-2 {
+.product-col-1  {
   padding: 0px 0px 0px 0px;
   margin: 10px 75px 0px 75px;
+
   /*top right bottom left*/
 }
 
-.product-col-3 {
+.product-col-2 {
   padding: 0px 0px 0px 0px;
   margin: 10px 0px 0px 0px;
   /*top right bottom left*/
