@@ -1,5 +1,5 @@
 import '../css/global.css';
-import '../css/bootstrap-grid.css';
+//import '../css/bootstrap-grid.css';
 
 // required default export is required in a new `pages/_app.js` file
 

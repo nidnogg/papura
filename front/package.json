@@ -1,7 +1,7 @@
 {
-  "name": "react-boiler-parcel",
+  "name": "papura-front",
   "version": "1.0.0",
-  "description": "React + parcel template",
+  "description": "Papura front",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -15,8 +15,7 @@
   },
   "keywords": [
     "react",
-    "template",
-    "parcel"
+    "template"
   ],
   "author": "nidnogg",
   "license": "MIT",
@@ -24,9 +23,7 @@
     "url": "https://github.com/Nidnogg/react-boiler-parcel/issues"
   },
   "homepage": "https://github.com/Nidnogg/react-boiler-parcel#readme",
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "dependencies": {
     "next": "^9.4.4",
     "react": "^16.13.1",
