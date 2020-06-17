@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from "next/link";
 import Layout from './components/layout';
 import React, { useState, useEffect, useRef } from 'react';
 
@@ -9,28 +10,31 @@ const Home = () => {
         <title>Papura Cadernos</title>
       </Head>
       <section className="main grid">
-        <div className="product-square product-col-0">
-        </div>
 
-        <div className="product-square product-col-1">
-        </div>
+        <Link href="/products/product-0">
+            <a className="">
+              <div className="product-square product-col-0">
+              </div>
+            </a>
+        </Link>
 
-        <div className="product-square product-col-2">
-        </div>
+        <Link href="/products/product-0">
+            <a className="">
+              <div className="product-square product-col-1">
+              </div>
+            </a>
+        </Link> 
+
+        <Link href="/products/product-0">
+            <a className="">
+              <div className="product-square product-col-2">
+              </div>
+            </a>
+        </Link>
+     
       </section>
     </Layout>
   );
 }
 
-/*
-interesting approach for rendering products -
-const pids = ['id1', 'id2', 'id3']
-{
-  pids.map((pid) => (
-    <Link href="/post/[pid]" as={`/post/${pid}`}>
-      <a>Post {pid}</a>
-    </Link>
-  ))
-}
-*/
 export default Home;
