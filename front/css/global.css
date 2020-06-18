@@ -112,6 +112,27 @@ nav a {
   width: 100%;
   max-width: 100px;
   height: auto;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 30vw 0px 30vw;
+  /*top right bottom left*/
+}
+
+@media only screen and (max-width: 1050px) {
+  .logo {
+    margin: 0px 25vw 0px 25vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin: 0px 15vw 0px 15vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logo {
+    margin: 0px 1vw 0px 1vw;
+  }
 }
 
 .social {
@@ -158,4 +179,26 @@ nav a {
   .grid {
     display: block;
   }
+}
+
+
+.about-highlight {
+  color: var(--base-color);
+  background-color: var(--base-color-contrast);
+  width: 50%;
+  max-height: 150px;
+
+  text-align: left;
+  font-size: 48px;
+  padding: 10px 10px 10px 50px;
+  /*top right bottom left*/
+}
+
+.about {
+  width: 50%;
+  height: auto;
+  padding: 10px 10px 10px 50px;
+  text-align: left;
+
+  /*top right bottom left*/
 }
