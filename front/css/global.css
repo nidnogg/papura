@@ -24,7 +24,7 @@
 
 html {
 
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   overflow-x: scroll;
 }
 
@@ -56,14 +56,19 @@ time, mark, audio, video {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
+
   font-weight: 700; /* or 300, test */
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 p {
   font-family: 'Cabin', sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 li {
@@ -183,8 +188,7 @@ nav a {
 
 
 .about-highlight {
-  color: var(--base-color);
-  background-color: var(--base-color-contrast);
+  background-color: var(--base-color-s1);
   width: 50%;
   max-height: 150px;
 
@@ -194,11 +198,26 @@ nav a {
   /*top right bottom left*/
 }
 
-.about {
-  width: 50%;
+.about-grid {
+  display: inline-block;
+}
+.about-col-0 {
+  display: inline-block;
+  width: 30%;
   height: auto;
   padding: 10px 10px 10px 50px;
   text-align: left;
+
+  /*top right bottom left*/
+}
+
+.about-col-1 {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  padding: 10px 10px 10px 50px;
+  text-align: left;
+  background-color: var(--base-color-s1);
 
   /*top right bottom left*/
 }
