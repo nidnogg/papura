@@ -108,6 +108,18 @@ nav a {
   padding-right: 10px;
 }
 
+.logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.social {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
 .product-square {
   display: inline-block;
   background-color: var(--base-color-s2);
@@ -117,20 +129,20 @@ nav a {
 
 .product-col-0 {
   padding: 0px 0px 0px 0px;
-  margin: 60px 0px 0px 0px;
+  margin: 20px 0px 10px 0px;
   /*top right bottom left*/
 }
 
 .product-col-1  {
   padding: 0px 0px 0px 0px;
-  margin: 60px 75px 0px 75px;
+  margin: 20px 75px 10px 75px;
 
   /*top right bottom left*/
 }
 
 .product-col-2 {
   padding: 0px 0px 0px 0px;
-  margin: 60px 0px 0px 0px;
+  margin: 20px 0px 10px 0px;
   /*top right bottom left*/
 }
 
