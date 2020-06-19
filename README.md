@@ -1,16 +1,18 @@
-# react-boiler-parcel
-A barebones React app for use as a template.
+# papura
+An artisan's notebook website, currently in development.
 
 ## Usage
 
-```npm run dev``` for development
+### For back-end development:
+```psql -U postgres -d papura-db``` for booting local postgres database
+
+```npm run develop``` for development on back-end (strapi)
+
+```npm run dev``` for development on front-end.
 
  ```npm run build``` for production
 
 ## Dependencies 
 
-Parcel, React, ReactDOM
+React, Next.js, Strapi, PostgreSQL 
 
-## Misc 
-
-```npx babel-upgrade``` may be necessary for the latest Babel version to work (2019)
