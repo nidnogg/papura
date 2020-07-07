@@ -114,15 +114,26 @@ a:hover {
 .bread {
   cursor: pointer;
   position: fixed;
+  display: none;
   top: 70px;
   right: 50px;
   z-index: 9999;
 }
 
-@media(max-width: 451px) {
+@media(max-width: 890px) {
   .bread {
-    right: 30px;
+    display: block;
+  }
 
+  .nav-items {
+    display: none;
+    opacity: 0;
+  
+  }
+
+  .nav-social {
+    display: none;
+    opacity: 0;
   }
 }
 
@@ -169,7 +180,7 @@ a:hover {
   width: 100vw;
   height: 110px;
   display: inline-block;
-  background-color: var(--base-color-s1);
+  background-color: var(--base-color);
 }
 
 .nav-items {
@@ -231,33 +242,48 @@ nav a {
   height: auto;
 }
 
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+  grid-template-columns: 200px 200px 200px;
+  width: 80vw;
+}
+
+.grid-item {
+
+}
 .product-square {
   display: inline-block;
   background-color: var(--base-color-s2);
-  height: 550px;
+  width: 50px;
+  height: 50px;
+  /*
   width: 400px;
-  
+  height: 550px;
+  */
 }
 
+
+/*
 .product-col-0 {
   padding: 0px 0px 0px 0px;
   margin: 20px 0px 10px 0px;
-  /*top right bottom left*/
 }
 
 .product-col-1  {
   padding: 0px 0px 0px 0px;
   margin: 20px 75px 10px 75px;
 
-  /*top right bottom left*/
 }
 
 .product-col-2 {
   padding: 0px 0px 0px 0px;
   margin: 20px 0px 10px 0px;
-  /*top right bottom left*/
 }
 
+*/
 
 .main {
   max-width: 100vw;
