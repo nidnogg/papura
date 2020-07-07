@@ -5,9 +5,9 @@ const About = () => {
     <Layout>
       <div>
         <div className="about-highlight">
-          <h2>
+          <h1>
             Seja bem vindo ao Papura Cadernos.
-          </h2>
+          </h1>
         </div>
 
         <div className="about-grid">
