@@ -59,9 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700; /* or 300, test */
 }
 
-h2 {
-}
-
 p {
   font-family: 'Cabin', sans-serif;
   font-size: 1em;
@@ -96,17 +93,97 @@ a:hover {
   color: var(--base-color-s4);
 }
 
+.mobile-menu {
+  opacity: 0; /* toggled by gsap */
+  position: absolute;
+  background: var(--base-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-nav-items {
+  display: absolute;
+  margin-top: 40vh;
+  font-size: 1.5rem;
+}
+
+.mobile-nav-items a {
+  padding-bottom: 40px;
+}
+
+.bread {
+  cursor: pointer;
+  position: fixed;
+  top: 70px;
+  right: 50px;
+  z-index: 9999;
+}
+
+@media(max-width: 451px) {
+  .bread {
+    right: 30px;
+
+  }
+}
+
+.ham {
+  position: relative;
+  display: flex;
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+  z-index: 9998;
+}
+
+.burger_1,
+.burger_2,
+.burger_3 {
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: var(--base-color-s4);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  z-index: 9999;
+}
+
+
+.burger_2 {
+  top: 15px;
+  /*transform: translateY(-9px);*/
+}
+
+.burger_3 {
+  bottom: 15px;
+  /*transform: translateY(5px);*/
+}
+
+.fixed-navbar {
+  position: fixed;
+}
 .navbar {
   position: relative;
-  right: 40px;
-  
-}
-.navbar section {
-  position: relative;
+  width: 100vw;
+  height: 110px;
   display: inline-block;
-  height: 80px;
-  padding-top: 20px;
-  left: 0;
+  background-color: var(--base-color-s1);
+}
+
+.nav-items {
+  position: absolute;
+  display: inline-block;
+  left: 60px;
+  top: 80px
+}
+
+.nav-social {
+  position: absolute;
+  display: inline-block;
+  top: 60px;
+  right: 50px;
 }
 
 nav a {
@@ -121,8 +198,7 @@ nav a {
   max-width: 110px;
   height: auto;
   padding: 0px 0px 0px 0px;
-  margin: 0px 300px 0 300px;
-  /*top right bottom left*/
+  /* top right bottom left */
 }
 
 @media only screen and (max-width: 1050px) {
