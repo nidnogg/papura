@@ -9,26 +9,24 @@ const Home = () => {
       <Head>
         <title>Papura Cadernos</title>
       </Head>
-      <section className="grid-container">
+      <section className="row">
 
         <Link href="/products/product-0">
-            <a className="">
-              <div className="product-square grid-item">
-              </div>
+            <a className="column">
+              <img className="line-square" src="" alt="arti"/>
+              
             </a>
         </Link>
 
         <Link href="/products/product-0">
-            <a className="">
-              <div className="product-square grid-item">
-              </div>
+            <a className="column">
+              <img className="line-square" src="" alt="mini"/>
             </a>
         </Link> 
 
         <Link href="/products/product-0">
-            <a className="">
-              <div className="product-square grid-item">
-              </div>
+            <a className="column">
+              <img className="line-square" src="" alt="trad"/>
             </a>
         </Link>
      

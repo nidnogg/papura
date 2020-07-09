@@ -20,7 +20,8 @@ const Layout = ({children}) => {
   useEffect(() => {
     if(!tl.current) {
       tl.current = gsap.timeline({defaults: {duration: 0.2, ease:"expo"} })
-                       .to(menu.current, { duration: 0.377, opacity: 1, zIndex: 9997, ease:"none"})
+        	             .to(menu.current, { duration: 0.0001, zIndex: 9997, ease:"none"})
+                       .to(menu.current, { duration: 0.377, opacity: 1, ease:"expo"})
            
     }
   }, []); // crap requirement for hooks
@@ -29,35 +30,72 @@ const Layout = ({children}) => {
     isMenuOpen ? tl.current.play() : tl.current.reverse();
   }, [isMenuOpen]);  // wonder if isMenuOpen is also required for hooks
   return (
-    <div className="fixed-navbar"> 
-      <nav className="navbar">
+    <div> 
+      <div className="fixed-navbar">
+        <nav className="navbar">
+          <section className="mobile-menu" ref={menu}>
 
-        <section className="mobile-menu" ref={menu}>
+            <section className="mobile-nav-items">
+              <Link href="/about">
+                <a className="nav-link">SOBRE</a>
+              </Link>
+              <br />
+              <br />
 
-          <section className="mobile-nav-items">
+              <Link href="/">
+                <a className="nav-link">LOJA</a>
+              </Link>
+              <br />
+              <br />
+
+              <Link href="/">
+                <a className="nav-link">CARRINHO
+                <img className="cart" src="/cart.png" alt="logo.png"/>
+                </a>
+              </Link>
+              <br />
+              <br />
+
+            </section>
+
+            <section className="mobile-nav-social">
+              <Link href="/">
+                <a>
+                  <img className="social" src="/social/face.png" alt="facebook!"/>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <img className="social" src="/social/insta.png" alt="instagram!"/>  
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <img className="social" src="/social/pin.png" alt="pinterest!"/>
+                </a>
+              </Link>
+            </section>
+
+            
+          </section>
+
+          <section className="nav-items">
             <Link href="/about">
               <a className="nav-link">SOBRE</a>
             </Link>
-            <br />
-            <br />
-
             <Link href="/">
               <a className="nav-link">LOJA</a>
             </Link>
-            <br />
-            <br />
-
             <Link href="/">
               <a className="nav-link">CARRINHO
               <img className="cart" src="/cart.png" alt="logo.png"/>
               </a>
             </Link>
-            <br />
-            <br />
-
           </section>
 
-          <section className="mobile-nav-social">
+          <img className="logo" src="/logo.png" alt="logo.png"/>
+          
+          <section className="nav-social">
             <Link href="/">
               <a>
                 <img className="social" src="/social/face.png" alt="facebook!"/>
@@ -75,44 +113,9 @@ const Layout = ({children}) => {
             </Link>
           </section>
 
-          
-        </section>
-
-        <section className="nav-items">
-          <Link href="/about">
-            <a className="nav-link">SOBRE</a>
-          </Link>
-          <Link href="/">
-            <a className="nav-link">LOJA</a>
-          </Link>
-          <Link href="/">
-            <a className="nav-link">CARRINHO
-            <img className="cart" src="/cart.png" alt="logo.png"/>
-            </a>
-          </Link>
-        </section>
-
-        <img className="logo" src="/logo.png" alt="logo.png"/>
-        
-        <section className="nav-social">
-          <Link href="/">
-            <a>
-              <img className="social" src="/social/face.png" alt="facebook!"/>
-            </a>
-          </Link>
-          <Link href="/">
-            <a>
-              <img className="social" src="/social/insta.png" alt="instagram!"/>  
-            </a>
-          </Link>
-          <Link href="/">
-            <a>
-              <img className="social" src="/social/pin.png" alt="pinterest!"/>
-            </a>
-          </Link>
-        </section>
-        <Hamburger isMenuOpen={isMenuOpenCallback} setMenuOpen={setMenuOpenCallback} />
-      </nav>
+          <Hamburger isMenuOpen={isMenuOpenCallback} setMenuOpen={setMenuOpenCallback} />
+        </nav>
+      </div>
       {children}
     </div>
   );
