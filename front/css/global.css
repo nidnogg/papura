@@ -10,6 +10,8 @@
   --base-color-s4: #3D3C35;
 }
 
+
+/*
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Karla&display=swap');
 /*
     font-family: 'Cabin', sans-serif;
@@ -366,12 +368,12 @@ nav a {
 .page-header {
   position: relative;
   font-size: 1.3em;
-  font-weight: 400;
   margin-bottom: 70px;
 }
 
 .page-header h1 {
   position: absolute;
+  font-weight: 400;
 }
 
 .cart-button {
@@ -408,10 +410,19 @@ nav a {
 
 .price {
   position: relative;
+  display: inline-flex;
+  top: 1px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: var(--base-color-brown);
   left: 70%;
 }
 
 .actual-price {
+  position: relative;
+  color: var(--base-color-contrast);
+  font-weight: 700;
+  left: 4px;
 }
 
 .item::after {
