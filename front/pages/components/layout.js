@@ -48,7 +48,7 @@ const Layout = ({children}) => {
               <br />
               <br />
 
-              <Link href="/">
+              <Link href="/cart">
                 <a className="nav-link">CARRINHO
                 <img className="cart" src="/cart.png" alt="logo.png"/>
                 </a>
@@ -86,7 +86,7 @@ const Layout = ({children}) => {
             <Link href="/">
               <a className="nav-link">LOJA</a>
             </Link>
-            <Link href="/">
+            <Link href="/cart">
               <a className="nav-link">CARRINHO
               <img className="cart" src="/cart.png" alt="logo.png"/>
               </a>
