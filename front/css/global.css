@@ -208,7 +208,7 @@ a:hover {
 
 nav a {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -390,6 +390,38 @@ nav a {
   color: var(--base-color);
   background: var(--base-color-brown);
   box-shadow: 2.11px 2.11px 7px var(--base-color-s2);
+}
+
+.cart-total {
+  position: fixed;
+  display: inline-block;
+  bottom: 150px;
+  right: 100px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--base-color-brown);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: var(--base-color-brown);
+  background: var(--base-color);
+  box-shadow: 2.11px 2.11px 7px var(--base-color-s2);
+}
+
+.cart-total p {
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+
+.total-price {
+  position: relative;
+  display: inline-flex;
+  bottom: 18px;
+  left: 34px;
+  font-size: 1.0em;
+  font-weight: 400;
+  color: var(--base-color-brown);
 }
 
 .item {

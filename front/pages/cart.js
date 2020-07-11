@@ -1,6 +1,5 @@
 import Layout from './components/layout';
 
-
 const Item = (props) => {
   const {model, price} = props;
 
@@ -8,12 +7,14 @@ const Item = (props) => {
     <div className="item">
       <h1>Mini</h1>
       <img className="item-image" src="" alt="missing image!"/>
-      <h1 className="price">R$ <span className="actual-price">18</span></h1>
+      <h1 className="price">R$<span className="actual-price">18</span></h1>
     </div>
 
   )
 }
+
 const Cart = () => {
+
   const handleBuy = () => {
     alert('buy!');
   }
@@ -30,7 +31,11 @@ const Cart = () => {
           <Item model="mini" price="18"/>
           <Item model="mini" price="18"/>
         </div>       
+        <div className="cart-total"> 
+          <p>Total: </p>
+          <h1 className="total-price">R$<span className="actual-price">18</span></h1>
 
+        </div>
         <button className="cart-button" onClick={handleBuy}>Comprar</button>
       </section>
     </Layout>
