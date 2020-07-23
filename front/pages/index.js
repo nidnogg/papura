@@ -12,24 +12,24 @@ const Home = () => {
       <section className="row">
 
         <Link href="/products/product-0">
-            <a className="column">
+            <a className="column" href="prod1">
               <img className="line-square" src="" alt="arti"/>
-              
             </a>
         </Link>
 
         <Link href="/products/product-0">
-            <a className="column">
+            <a className="column" href="prod2">
               <img className="line-square" src="" alt="mini"/>
             </a>
         </Link> 
 
         <Link href="/products/product-0">
-            <a className="column">
+            <a className="column" href="prod3">
               <img className="line-square" src="" alt="trad"/>
             </a>
         </Link>
-     
+
+
       </section>
     </Layout>
   );

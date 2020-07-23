@@ -326,8 +326,18 @@ nav a {
   right: 20px;
   bottom: 20px;
   z-index: -1;
+  background-image: url(https://i.imgur.com/0kkXXFj.png);
 }
 
+
+.about-img {
+  position: relative;
+  top: 120px;
+  right: 50px;
+  width: 450px;
+  height: auto;
+  transform: rotate(-90deg);
+}
 .about-text {
   position: relative;
   width: 60%;
@@ -342,6 +352,16 @@ nav a {
   height: 99%;
   background: var(--base-color-brown);
   left: 29px;
+}
+
+.about-highlight {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-porque {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* later skater

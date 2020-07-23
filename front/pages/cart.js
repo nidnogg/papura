@@ -30,6 +30,12 @@ const Cart = () => {
           <Item model="mini" price="18"/>
           <Item model="mini" price="18"/>
           <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
+          <Item model="mini" price="18"/>
         </div>       
         <div className="cart-total"> 
           <p>Total: </p>

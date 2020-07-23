@@ -6,27 +6,25 @@ const About = () => {
       <section className="about-row">
 
         <div className="about-image">
-          <img src="" alt="about-image"/>
+          <img className="about-img" src="https://i.imgur.com/0kkXXFj.png" alt="about-image"/>
 
         </div>
         <div className="about-text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Beatae esse error, minus possimus ullam placeat fugiat reprehenderit 
-            sint repellendus. Iure numquam blanditiis suscipit minus pariatur, fugiat 
-            vero dignissimos ipsam nemo?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Beatae esse error, minus possimus ullam placeat fugiat reprehenderit 
-            sint repellendus. Iure numquam blanditiis suscipit minus pariatur, fugiat 
-            vero dignissimos ipsam nemo? <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Beatae esse error, minus possimus ullam placeat fugiat reprehenderit 
-            sint repellendus. Iure numquam blanditiis suscipit minus pariatur, fugiat 
-            vero dignissimos ipsam nemo?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Beatae esse error, minus possimus ullam placeat fugiat reprehenderit 
-            sint repellendus. Iure numquam blanditiis suscipit minus pariatur, fugiat 
-            vero dignissimos ipsam nemo?
+            <span className="about-ola">Olá</span>! Meu nome é Suellen, cujas mãos estão por trás da confecção destes produtos. 
+            Tudo começou quando eu resolvi fazer um caderno para usar para as minhas anotações da faculdade. 
+            Como já gostava de trabalhos manuais, foi fácil me interessar pela encadernação artesanal e em 2019
+            comecei a produzir cadernos e os vendia na faculdade e para pessoas conhecidas. Depois de um tempo,
+            foi crescendo a vontade de expandir o negócio até que em 2020 decidi tirar do papel a ideia de criar 
+            um e-commerce. E assim surgiu o Papura.
+          </p>
+          <br />
+          <p>
+            <h1><span className="about-porque">Por que</span> Papura<span className="about-porque"><span>?</span></span></h1>
+            <span className="about-ola"></span>
+            Esse nome é a simples junção de duas palavras: papel e costura. 
+            A ideia de costurar papel foi uma das partes que mais me chamou a 
+            atenção quando comecei a aprender a fazer cadernos."
           </p>
         </div>
       </section>
