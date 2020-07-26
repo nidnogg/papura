@@ -292,7 +292,23 @@ nav a {
 }
 /* main line page */ 
 
+/* prod Page */
 
+.square-grid {
+  position: absolute;
+  margin-right: 50px;
+}
+.square {
+  display: inline-flex;
+  align-content: center;
+  width: 125px;
+  height: 125px;
+  background: var(--base-color-s4);
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+}
+/* prod page */
 /* about page */
 
 

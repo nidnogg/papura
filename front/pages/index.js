@@ -17,13 +17,13 @@ const Home = () => {
             </a>
         </Link>
 
-        <Link href="/products/product-0">
+        <Link href="/products/product-1">
             <a className="column" href="prod2">
               <img className="line-square" src="" alt="mini"/>
             </a>
         </Link> 
 
-        <Link href="/products/product-0">
+        <Link href="/products/product-2">
             <a className="column" href="prod3">
               <img className="line-square" src="" alt="trad"/>
             </a>
