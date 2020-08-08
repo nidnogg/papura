@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
-import ProductPage from '../components/productPage';
+import ProductGrid from '../components/productGrid';
 
 
 const Product = () => {
   return (
     <Layout>
-      <ProductPage />
+      <ProductGrid line={0}/>
     </Layout>
   );
 }

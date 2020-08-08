@@ -299,20 +299,22 @@ nav a {
   margin-right: 50px;
 }
 .square {
+  cursor: pointer;
   display: inline-flex;
   align-content: center;
   width: 125px;
   height: 125px;
   background: var(--base-color-s4);
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 50px;
 }
 /* prod page */
+
+
+
+
 /* about page */
-
-
-
 .about-row {
   display: inline-flex;
   margin-top: 50px;
