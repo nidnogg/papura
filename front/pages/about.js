@@ -24,7 +24,15 @@ const About = () => {
             <span className="about-ola"></span>
             Esse nome é a simples junção de duas palavras: papel e costura. 
             A ideia de costurar papel foi uma das partes que mais me chamou a 
-            atenção quando comecei a aprender a fazer cadernos."
+            atenção quando comecei a aprender a fazer cadernos.
+          </p>
+
+          <p>
+            No Papura você vai encontrar cadernos produzidos artesanalmente 
+            com um design minimalista e funcional mas com diferentes cores e 
+            estampas para diferentes gostos, porque minimalista não precisa ser
+            sinônimo de sem graça, não é mesmo? Aqui os cadernos são simples, 
+            práticos e charmosos.
           </p>
         </div>
       </section>
