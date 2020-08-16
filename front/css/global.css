@@ -344,17 +344,14 @@ nav a {
   right: 20px;
   bottom: 20px;
   z-index: -1;
-  background-image: url(https://i.imgur.com/0kkXXFj.png);
 }
 
 
 .about-img {
   position: relative;
-  top: 120px;
   right: 50px;
-  width: 450px;
+  width: 300px;
   height: auto;
-  transform: rotate(-90deg);
 }
 .about-text {
   position: relative;
