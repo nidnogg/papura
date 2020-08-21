@@ -301,15 +301,16 @@ nav a {
   left: 0;
   text-align: center;
 }
+
 .square {
   cursor: pointer;
   display: inline-flex;
   align-content: center;
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
   background: var(--base-color-s4);
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 50px;
 }
 /* prod page */

@@ -33,8 +33,14 @@ const ProductGrid = props => {
         <Square line={line} id={8}></Square>
         <Square line={line} id={9}></Square>
         <Square line={line} id={10}></Square>
+        <Square line={line} id={11}></Square>
       </div>
 
+      <div className="square-row">
+        <Square line={line} id={12}></Square>
+        <Square line={line} id={13}></Square>
+
+      </div>
     </div>
   );
 }
