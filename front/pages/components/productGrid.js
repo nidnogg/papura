@@ -15,18 +15,26 @@ const ProductGrid = props => {
   const {line} = props;
   return (
     <div className='square-grid'>
-      <Square line={line} id={0}></Square>
-      <Square line={line} id={1}></Square>
-      <Square line={line} id={2}></Square>
-      <Square line={line} id={3}></Square>
-      <Square line={line} id={4}></Square>
-      <Square line={line} id={5}></Square>
-      <Square line={line} id={6}></Square>
-      <Square line={line} id={7}></Square>
-      <Square line={line} id={8}></Square>
-      <Square line={line} id={9}></Square>
-      <Square line={line} id={10}></Square>
-      <Square line={line} id={11}></Square>
+      <div className="square-row">
+        <Square line={line} id={0}></Square>
+        <Square line={line} id={1}></Square>
+        <Square line={line} id={2}></Square>
+        <Square line={line} id={3}></Square>
+      </div>
+
+      <div className="square-row">
+        <Square line={line} id={4}></Square>
+        <Square line={line} id={5}></Square>
+        <Square line={line} id={6}></Square>
+        <Square line={line} id={7}></Square>
+      </div>
+
+      <div className="square-row">
+        <Square line={line} id={8}></Square>
+        <Square line={line} id={9}></Square>
+        <Square line={line} id={10}></Square>
+      </div>
+
     </div>
   );
 }

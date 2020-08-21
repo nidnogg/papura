@@ -48,13 +48,17 @@ const Layout = ({children}) => {
               <br />
               <br />
 
+
+              {/*
               <Link href="/cart">
                 <a className="nav-link">CARRINHO
                 <img className="cart" src="/cart.png" alt="logo.png"/>
                 </a>
               </Link>
+      
               <br />
               <br />
+              */}
 
             </section>
 
@@ -86,11 +90,14 @@ const Layout = ({children}) => {
             <Link href="/">
               <a className="nav-link">LOJA</a>
             </Link>
+
+            {/*
             <Link href="/cart">
               <a className="nav-link">CARRINHO
               <img className="cart" src="/cart.png" alt="logo.png"/>
               </a>
             </Link>
+             */}
           </section>
 
           <img className="logo" src="/logo.png" alt="logo.png"/>
