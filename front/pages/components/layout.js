@@ -63,21 +63,17 @@ const Layout = ({children}) => {
             </section>
 
             <section className="mobile-nav-social">
-              <Link href="/">
-                <a>
-                  <img className="social" src="/social/face.png" alt="facebook!"/>
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <img className="social" src="/social/insta.png" alt="instagram!"/>  
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <img className="social" src="/social/pin.png" alt="pinterest!"/>
-                </a>
-              </Link>
+        
+              <a href="https://www.facebook.com/Papura-Cadernos-111203954035669">
+                <img className="social" src="/social/face.png" alt="facebook!"/>
+              </a>
+      
+              <a href="https://www.instagram.com/papura.cadernos/">
+                <img className="social" src="/social/insta.png" alt="instagram!"/>  
+              </a>
+              <a href="https://br.pinterest.com/papuracadernos/">
+                <img className="social" src="/social/pin.png" alt="pinterest!"/>
+              </a>
             </section>
 
             
@@ -103,21 +99,20 @@ const Layout = ({children}) => {
           <img className="logo" src="/logo.png" alt="logo.png"/>
           
           <section className="nav-social">
-            <Link href="/">
-              <a>
-                <img className="social" src="/social/face.png" alt="facebook!"/>
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <img className="social" src="/social/insta.png" alt="instagram!"/>  
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <img className="social" src="/social/pin.png" alt="pinterest!"/>
-              </a>
-            </Link>
+        
+            <a href="https://www.facebook.com/Papura-Cadernos-111203954035669">
+              <img className="social" src="/social/face.png" alt="facebook!"/>
+            </a>
+    
+  
+            <a href="https://www.instagram.com/papura.cadernos/">
+              <img className="social" src="/social/insta.png" alt="instagram!"/>  
+            </a>
+
+            <a href="https://br.pinterest.com/papuracadernos/">
+              <img className="social" src="/social/pin.png" alt="pinterest!"/>
+            </a>
+
           </section>
 
           <Hamburger isMenuOpen={isMenuOpenCallback} setMenuOpen={setMenuOpenCallback} />
