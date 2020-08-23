@@ -306,8 +306,8 @@ nav a {
   cursor: pointer;
   display: inline-flex;
   align-content: center;
-  width: 200px;
   height: 200px;
+  width: auto;
   background: var(--base-color-s4);
   margin-left: 50px;
   margin-right: 50px;
