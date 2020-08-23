@@ -18,6 +18,8 @@ const Square = props => {
 const Product = () => {
   return (
     <Layout>
+      <h1 className="header">Modelos a partir de 20 reais, 60 páginas:</h1>
+
       <div className='square-grid'>
         <div className="square-row">
           <Square id={0}></Square>

@@ -16,7 +16,7 @@ const Product = () => {
     <Layout>
       <br></br>
       <br />
-      <h1 className="context">Modelos a partir de 20 reais, 60 páginas:</h1>
+      <h1 className="header">Modelos a partir de 20 reais, 60 páginas:</h1>
       <div className='square-grid'>
         <div className="square-row">
           <Square id={0}></Square>

@@ -553,13 +553,16 @@ nav a {
   }
 }
 
-.prod-header {
-  font-size: 15px;
+.header {
+  font-size: 1.5em;
   color: var(--base-color-contrast);
 }
 
 .sidebar {
   position: relative;
-  max-width: 500px;
-  display: flex;
+  bottom: 300px;
+  right: 0px;
+  text-align: left;
+  float: right;
+
 }
