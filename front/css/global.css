@@ -10,6 +10,8 @@
   --base-color-s4: #3D3C35;
 }
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 
 /*
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Karla&display=swap');
@@ -518,3 +520,46 @@ nav a {
 
 
 /* cart page */ 
+
+
+/* product page */
+.image-gallery-play-button {
+  display: none;
+}
+
+.image-gallery-svg:hover {
+  color: var(--base-color-brown);
+
+}
+
+.image-gallery-icon:hover {
+  color: var(--base-color-brown);
+
+}
+
+.image-gallery-icon:focus {
+  color: var(--base-color-brown);
+}
+
+.image-gallery {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  max-width: 500px;
+}
+@media(max-width: 500px) {
+  .image-gallery {
+    left: 0px;
+  }
+}
+
+.prod-header {
+  font-size: 15px;
+  color: var(--base-color-contrast);
+}
+
+.sidebar {
+  position: relative;
+  max-width: 500px;
+  display: flex;
+}

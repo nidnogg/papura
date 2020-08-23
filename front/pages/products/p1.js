@@ -10,8 +10,7 @@ const Square = props => {
   const line = 0;
   return (
     <Link href={`/products/p${line}${id}`}>
-      <div className="square">
-      </div>
+      <img className="square" src={`/trad/${id}.jpg`} alt="notebook"></img>   
     </Link>
   );
 }

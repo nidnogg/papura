@@ -6,13 +6,7 @@ const Square = props => {
   const line = 0;
   return (
     <Link href={`/products/p${line}${id}`}>
-
-      <img className="square" src={`/comp/${id}.jpg`} alt="notebook"></img> 
-      {/*
-      <div className="square">
-        <img src={`/comp/${id}`} alt="notebook"></img>
-      </div>
-       */}
+      <img className="square" src={`/comp/${id}.jpg`} alt="notebook"></img>   
     </Link>
   );
 }
@@ -20,6 +14,9 @@ const Square = props => {
 const Product = () => {
   return (
     <Layout>
+      <br></br>
+      <br />
+      <h1 className="context">Modelos a partir de 20 reais, 60 páginas:</h1>
       <div className='square-grid'>
         <div className="square-row">
           <Square id={0}></Square>
